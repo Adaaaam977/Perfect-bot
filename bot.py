@@ -1597,7 +1597,7 @@ def main_loop():
         except Exception as e:
             print(f"Error: {e}")
 
-        time.sleep(900)
+        time.sleep(60)
 
 if __name__ == "__main__":
     server_thread = threading.Thread(target=run_server)
