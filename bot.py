@@ -1438,7 +1438,6 @@ def main_loop():
                 current_direction = "BUY" if trade and "BUY" in trade["direction"] else ("SELL" if trade and "SELL" in trade["direction"] else None)
 
                 if not current_direction:
-                    last_signal.pop(pair, None)
                     continue
 
                 # تصفية الدخول الفعلي وإرسال التنبيهات: يتم فقط أثناء جلسات السيولة العالية
