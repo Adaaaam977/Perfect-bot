@@ -1063,7 +1063,9 @@ def push_to_github(opportunities):
     content = json.dumps(opportunities, ensure_ascii=False, indent=2)
     encoded = base64.b64encode(content.encode()).decode()
     payload = {"message": "update opportunities", "content": encoded, "sha": sha}
-    requests.put(url, headers=headers, json=payload)
+    put_r = requests.put(url, headers=headers, json=payload)          
+    if put_r.status_code not in (200, 201):                             
+        print(f"❌ فشل push_to_github: {put_r.status_code} — {put_r.text}")    
 
 def monitor_trade(trade):
     global waiting_confirmation, pending_trades
