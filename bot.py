@@ -1054,18 +1054,24 @@ def pull_from_github():
         return []
 
 def push_to_github(opportunities):
+    print("🔍 push_to_github: بدات", flush=True)
     if not GH_TOKEN or not GITHUB_REPO:
+        print(f"🔍 push_to_github: GH_TOKEN={bool(GH_TOKEN)} GITHUB_REPO={bool(GITHUB_REPO)} — رجعت بلا كتابة", flush=True)
         return
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{OPPORTUNITIES_FILE}"
     headers = {"Authorization": f"token {GH_TOKEN}"}
     r = requests.get(url, headers=headers)
+    print(f"🔍 push_to_github: GET status={r.status_code}", flush=True)
     sha = r.json().get("sha", "") if r.status_code == 200 else ""
     content = json.dumps(opportunities, ensure_ascii=False, indent=2)
     encoded = base64.b64encode(content.encode()).decode()
     payload = {"message": "update opportunities", "content": encoded, "sha": sha}
-    put_r = requests.put(url, headers=headers, json=payload)          
-    if put_r.status_code not in (200, 201):                             
-        print(f"❌ فشل push_to_github: {put_r.status_code} — {put_r.text}")    
+    put_r = requests.put(url, headers=headers, json=payload)
+    print(f"🔍 push_to_github: PUT status={put_r.status_code}", flush=True)
+    if put_r.status_code not in (200, 201):
+        print(f"❌ فشل push_to_github: {put_r.status_code} — {put_r.text}", flush=True)
+    else:
+        print("✅ push_to_github: نجحت الكتابة", flush=True)    
 
 def monitor_trade(trade):
     global waiting_confirmation, pending_trades
