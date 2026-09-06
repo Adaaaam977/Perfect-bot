@@ -244,5 +244,67 @@
       "last_swing_high_15m": 1.34997,
       "last_swing_low_15m": 1.34844
     }
+  },
+  {
+    "date": "2026-09-06 11:50",
+    "time": "11:50 UTC",
+    "pair": "GBP/USD",
+    "direction": "BUY 📈",
+    "price": 1.35292,
+    "tp": 1.35342,
+    "sl": 1.35259,
+    "rr": 1.5,
+    "strength": 2,
+    "cancelled": false,
+    "filtered_out": true,
+    "filter_reason": "SL صغير (3.3 pips) + SL داخل FVG مع شمعة Strong Bullish Candle (بلا تعويض Engulfing)",
+    "timestamp": 1788695401.290013,
+    "market_info": {
+      "atr": 0.000326,
+      "current_price": 1.35292
+    },
+    "htf_info": {
+      "h1_bias": "SELL",
+      "h1_choch_seen": true,
+      "h1_bos_seen": true,
+      "h1_major_swing_high": 1.35498,
+      "h1_major_swing_low": 1.35142,
+      "h4_bias": "BUY",
+      "h4_choch_seen": false,
+      "h4_bos_seen": false,
+      "h4_major_swing_high": 1.35498,
+      "h4_major_swing_low": 1.34864
+    },
+    "smc_info": {
+      "sweep_level": 1.35138,
+      "candles_since_sweep": 0,
+      "bos_level": 1.35151,
+      "candles_since_bos": 0,
+      "ob_low": 1.35138,
+      "ob_high": 1.35148,
+      "fvg_low": 1.35145,
+      "fvg_high": 1.3529
+    },
+    "entry_info": {
+      "entry_price": 1.35292,
+      "tp": 1.35342,
+      "sl": 1.35259,
+      "rr": 1.5
+    },
+    "pullback_info": {
+      "pullback_boundary": 1.3529,
+      "touched_ob_or_fvg": true
+    },
+    "candle_confirmation_info": {
+      "pattern": "Strong Bullish Candle",
+      "open": 1.3529,
+      "high": 1.35292,
+      "low": 1.3529,
+      "close": 1.35292
+    },
+    "swing_info": {
+      "last_swing_high_15m": 1.35151,
+      "last_swing_low_15m": 1.35138
+    }
   }
 ]
