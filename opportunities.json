@@ -1298,5 +1298,67 @@
       "last_swing_high_15m": 1.12057,
       "last_swing_low_15m": 1.12011
     }
+  },
+  {
+    "date": "2026-10-11 14:47",
+    "time": "14:47 UTC",
+    "pair": "EUR/USD",
+    "direction": "BUY 📈",
+    "price": 1.12075,
+    "tp": 1.12125,
+    "sl": 1.12042,
+    "rr": 1.5,
+    "strength": 1,
+    "cancelled": false,
+    "filtered_out": true,
+    "filter_reason": "SL صغير (3.3 pips) + SL داخل FVG مع شمعة Strong Bullish Candle (بلا تعويض Engulfing)",
+    "timestamp": 1791730035.652453,
+    "market_info": {
+      "atr": 0.000226,
+      "current_price": 1.12075
+    },
+    "htf_info": {
+      "h1_bias": "SELL",
+      "h1_choch_seen": false,
+      "h1_bos_seen": false,
+      "h1_major_swing_high": 1.1206,
+      "h1_major_swing_low": 1.12001,
+      "h4_bias": "SELL",
+      "h4_choch_seen": true,
+      "h4_bos_seen": true,
+      "h4_major_swing_high": 1.12517,
+      "h4_major_swing_low": 1.11882
+    },
+    "smc_info": {
+      "sweep_level": 1.12003,
+      "candles_since_sweep": 0,
+      "bos_level": 1.12044,
+      "candles_since_bos": 1,
+      "ob_low": 1.12051,
+      "ob_high": 1.12058,
+      "fvg_low": 1.12019,
+      "fvg_high": 1.12049
+    },
+    "entry_info": {
+      "entry_price": 1.12075,
+      "tp": 1.12125,
+      "sl": 1.12042,
+      "rr": 1.5
+    },
+    "pullback_info": {
+      "pullback_boundary": 1.12058,
+      "touched_ob_or_fvg": true
+    },
+    "candle_confirmation_info": {
+      "pattern": "Strong Bullish Candle",
+      "open": 1.12053,
+      "high": 1.12081,
+      "low": 1.12051,
+      "close": 1.12075
+    },
+    "swing_info": {
+      "last_swing_high_15m": 1.12044,
+      "last_swing_low_15m": 1.12003
+    }
   }
 ]
