@@ -1732,5 +1732,67 @@
       "last_swing_high_15m": 1.33951,
       "last_swing_low_15m": 1.33867
     }
+  },
+  {
+    "date": "2026-11-02 14:18",
+    "time": "14:18 UTC",
+    "pair": "GBP/USD",
+    "direction": "SELL 📉",
+    "price": 1.34095,
+    "tp": 1.34045,
+    "sl": 1.34128,
+    "rr": 1.5,
+    "strength": 1,
+    "cancelled": false,
+    "filtered_out": true,
+    "filter_reason": "SL صغير (3.3 pips) مع شمعة Strong Bearish Candle (بلا تعويض Engulfing)",
+    "timestamp": 1793629105.129973,
+    "market_info": {
+      "atr": 0.000897,
+      "current_price": 1.34095
+    },
+    "htf_info": {
+      "h1_bias": "BUY",
+      "h1_choch_seen": true,
+      "h1_bos_seen": true,
+      "h1_major_swing_high": 1.34483,
+      "h1_major_swing_low": 1.33792,
+      "h4_bias": "BUY",
+      "h4_choch_seen": true,
+      "h4_bos_seen": true,
+      "h4_major_swing_high": 1.34098,
+      "h4_major_swing_low": 1.33202
+    },
+    "smc_info": {
+      "sweep_level": 1.34251,
+      "candles_since_sweep": 4,
+      "bos_level": 1.34116,
+      "candles_since_bos": 0,
+      "ob_low": 1.34133,
+      "ob_high": 1.34298,
+      "fvg_low": 1.34111,
+      "fvg_high": 1.34115
+    },
+    "entry_info": {
+      "entry_price": 1.34095,
+      "tp": 1.34045,
+      "sl": 1.34128,
+      "rr": 1.5
+    },
+    "pullback_info": {
+      "pullback_boundary": 1.34111,
+      "touched_ob_or_fvg": true
+    },
+    "candle_confirmation_info": {
+      "pattern": "Strong Bearish Candle",
+      "open": 1.34108,
+      "high": 1.34111,
+      "low": 1.34093,
+      "close": 1.34095
+    },
+    "swing_info": {
+      "last_swing_high_15m": 1.34298,
+      "last_swing_low_15m": 1.34116
+    }
   }
 ]
